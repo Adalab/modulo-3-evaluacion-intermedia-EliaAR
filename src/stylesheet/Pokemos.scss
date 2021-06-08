@@ -1,0 +1,18 @@
+.pokemos {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 20%;
+  margin: 20px;
+  background-color: burlywood;
+
+  &__name {
+    border-top: 1px solid black;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__type {
+    border-top: 1px solid black;
+  }
+}

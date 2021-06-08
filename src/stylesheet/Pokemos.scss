@@ -6,13 +6,30 @@
   margin: 20px;
   background-color: burlywood;
 
+  &__img {
+    width: 160px;
+  }
+
   &__name {
     border-top: 1px solid black;
     text-transform: capitalize;
     text-align: center;
   }
 
-  &__type {
+  &__types {
     border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__type {
+    display: flex;
+    word-spacing: 5px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(176, 214, 137);
+    text-transform: uppercase;
+    justify-content: space-around;
   }
 }

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../stylesheet/Pokemos.scss";
 
 function Pokemon(props) {
@@ -10,11 +11,19 @@ function Pokemon(props) {
       />
       <h3 className="pokemos__name">{props.item.name}</h3>
       <p className="pokemos__types">
-        {props.item.types.map((type) => (
-          <li className="pokemos__type">{type}</li>
+        {props.item.types.map((type, index) => (
+          <span className="pokemos__type" key={index}>
+            {type}
+          </span>
         ))}
       </p>
     </li>
   );
 }
 export { Pokemon };
+
+Pokemon.propTypes = {
+  name: PropTypes.string,
+  url: PropTypes.string,
+  pokemon: PropTypes.object,
+};

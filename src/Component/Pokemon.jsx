@@ -3,7 +3,7 @@ import "../stylesheet/Pokemos.scss";
 
 function Pokemon(props) {
   return (
-    <li className="pokemos">
+    <div className="pokemos">
       <img
         className="pokemos__img"
         src={props.item.url}
@@ -17,7 +17,7 @@ function Pokemon(props) {
           </span>
         ))}
       </p>
-    </li>
+    </div>
   );
 }
 export { Pokemon };
@@ -25,5 +25,5 @@ export { Pokemon };
 Pokemon.propTypes = {
   name: PropTypes.string,
   url: PropTypes.string,
-  pokemon: PropTypes.object,
+  type: PropTypes.object,
 };

@@ -4,7 +4,9 @@ function PokeList(props) {
   return (
     <ul>
       {props.Pokemons.map((item) => (
-        <Pokemon item={item} key={item.id} />
+        <li key={item.id}>
+          <Pokemon item={item} />
+        </li>
       ))}
       )
     </ul>
